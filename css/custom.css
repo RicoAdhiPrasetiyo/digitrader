@@ -231,6 +231,10 @@ hr.gradient {
   padding-top: 40px;
 }
 
+.services-block-four .inner-box .icon-box:before {
+  height: 75%;
+}
+
 /* End Section 3 */
 @media (min-width: 1200px) {
   .main-ilustration {
@@ -266,28 +270,212 @@ hr.gradient {
   padding: 40px 0;
   background-color: #252525;
 }
+/* End Footer Section */
 
-#kontlo input,
-#kontlo select {
-  width: 100%;
-  height: 60px;
+/* Start Carousel Section */
+
+.project-screen .project-detail {
+  background-color: transparent;
 }
 
-.input .hs-fieldtype-intl-phone {
+.slick-list {
+  border-radius: 20px;
+}
+
+/* End Carousel Section */
+
+/* Start form-register */
+#form-register {
+  display: flex;
+  justify-content: center;
+}
+
+.hs-form-private {
+  padding: 30px 5rem;
+}
+
+#form-register input,
+#form-register select {
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  padding: 0 10px;
+}
+
+#form-register .input .hs-fieldtype-intl-phone {
   display: flex;
   gap: 10px;
   justify-content: space-between;
 }
 
-.hbspt-form {
-  background-color: #f7b80b;
+#form-register .hbspt-form {
+  background-color: #7a6d2b2d;
   border-radius: 20px;
 }
 
-#kontlo .hs-fieldtype-intl-phone.hs-input:after {
+#form-register .hs-fieldtype-intl-phone.hs-input:after {
   display: none !important;
 }
 
-#kontlo .hs-form-booleancheckbox-display {
+#form-register .hs-form-booleancheckbox-display {
   display: flex;
 }
+
+#form-register .inputs-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+#form-register .hs-form-booleancheckbox-display {
+  display: flex;
+  align-items: center;
+}
+
+#form-register .hs-form-booleancheckbox input {
+  width: 18px;
+  height: 18px;
+}
+
+#form-register .hs-error-msg {
+  color: red;
+}
+
+#form-register .hbspt-form {
+  width: 100%;
+  max-width: 50rem;
+}
+
+#form-register .hs_recaptcha {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+#form-register select {
+  text-align: center;
+}
+
+#form-register .hs-button {
+  width: 100%;
+  max-width: 60%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+#form-register label {
+  color: var(--color-white);
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+#form-register h2 {
+  font-size: 44px !important;
+}
+
+#form-register a {
+  color: var(--color-yellow);
+}
+
+/* Start Cards Section */
+
+.shadow-blur {
+  background-color: transparent;
+  position: relative;
+}
+
+.shadow-blur:before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 16px 2px rgb(0 0 0);
+  left: 3px;
+  right: 30%;
+  width: 9%;
+  height: calc(100% - 43px);
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.shadow-blur:after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  left: -20px;
+  width: 25%;
+  top: 0;
+  height: 100%;
+  background-color: #f8f9fa;
+  border-right: 1px solid #252424;
+}
+
+.in-shadow {
+  position: relative;
+  padding: 4px 0;
+  background: #f8f9fa;
+}
+
+.image-shadow {
+  background: gold;
+  border-radius: 0 60px 60px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-feature {
+  width: 100%;
+  max-width: 894px;
+  border-radius: 50px;
+  background-color: gold;
+}
+
+/* End Cards Section */
+
+/* Divider */
+
+.wrapper {
+  padding-bottom: 0;
+}
+
+.divider {
+  position: relative;
+  margin-top: 50px;
+  height: 3px;
+}
+
+.div-transparent:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    rgb(48, 49, 51),
+    transparent
+  );
+}
+
+.div-dot:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -9px;
+  left: calc(50% - 9px);
+  width: 18px;
+  height: 18px;
+  background-color: var(--color-yellow);
+  border: 2px solid rgb(30, 30, 31);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px white, 0 0 0 4px var(--color-yellow);
+}
+
+/* End Divider */
